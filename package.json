@@ -1,0 +1,24 @@
+{
+  "name": "bluehance360-user",
+  "version": "1.0.0",
+  "description": "Now that you have the Unique User Ids, you queried the “Users” database and got the users Data as an Array as follows\r Eg Structure : -\r [\r \t{\r \t\tuserId : \"054\",\r \t\tname : \"John Doe\",\r \t\ttags : [\"New\", \"Top5\", \"Contributor\"],\r \t\tisAdmin : true\r \t},\r \t{\r \t\tuserId : \"034\",\r \t\tname : \"Joanna Croft\",\r \t\ttags : [\"Legend\", \"Composer\"],\r \t\tisAdmin : true\r \t},\r \t{\r \t\t…\t\r \t}\r \t.\r \t.\r \t.\r ]\r Create a function that takes the User Data and add the Tag “Contributor” too each user\r Only assign the Tag if\r 1. The User is an admin (check “isAdmin”)\r 2. The tag does not already exist in the array\r Finally return the updated users and the count of Users that were updated.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThurpatiNainesh/BLUEHANCE360-User.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThurpatiNainesh/BLUEHANCE360-User/issues"
+  },
+  "homepage": "https://github.com/ThurpatiNainesh/BLUEHANCE360-User#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
