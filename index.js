@@ -15,7 +15,7 @@ app.put('/user', (req, res) => {
   if (!query) {
     return res
       .status(404)
-      .json({ success: false, msg: `no person with id ${id}` })
+      .json({ success: false, msg: "please provide tag in query" })
   }
    let result=[]
    let count=0
@@ -24,7 +24,7 @@ app.put('/user', (req, res) => {
       person.tags.push(query)
       result.push(person.userId)
           count++
-          console.log(person.tags)
+//           console.log(person.tags)
     }
   })
   
